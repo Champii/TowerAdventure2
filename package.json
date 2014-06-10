@@ -1,0 +1,26 @@
+{
+  "name": "toweradventure2",
+  "version": "0.0.1",
+  "dependencies": {
+    "settings": "*",
+    "coffee-script": "*",
+    "async": "*",
+    "express": "*",
+    "underscore": "*",
+    "connect-cachify": "*",
+    "uglifyjs": "*",
+    "coffee-middleware": "*",
+    "socket.io": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "cookie-parser": "*",
+    "body-parser": "*",
+    "express-session": "*",
+    "jade": "*",
+    "mocha": "*",
+    "assert": "*",
+    "superagent": "*",
+    "supertest": "*",
+    "nodemailer": "*"
+  }
+}

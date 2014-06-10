@@ -1,0 +1,54 @@
+module.exports = {
+  common:
+  {
+    api:
+    {
+      facebook:
+      {
+        key: "530873730351776",
+        secret: "c42ed63986434ee7f6a28db63864ce38"
+      },
+
+      twitter:
+      {
+        key: "BMRJ1EIbLGXlGumwwqYeprv9i",
+        secret: "6zDiNyb0Gn6Ysutzdd5HmQ40EpkZaibYnwl6TGE1RP87iXVI9V"
+      },
+
+      linkedin:
+      {
+        key: "77x19qu7amr3kl",
+        secret: "i2Egh2UHXqoyguWK"
+      }
+
+    },
+
+    connectors:
+    {
+      sql: "Mongodb"
+    },
+
+    mongodb:
+    {
+      host: "localhost",
+      user: "root",
+      password: "001127",
+      database: "mecanicadom"
+    },
+
+    host:
+    {
+      address: 'http://localhost:3000',
+      port: 3000
+    },
+
+    minify: false,
+
+    // 0 = None
+    // 1 = Error
+    // 2 = Warning
+    // 3 = Log
+    log: 1
+  }
+};
+

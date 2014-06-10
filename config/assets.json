@@ -1,0 +1,18 @@
+{
+  "/js/build/toweradventure2.min.js": [
+    "/js/lib/jquery.js",
+    "/js/lib/jquery-ui.js",
+    "/js/lib/underscore.js",
+    "/js/lib/angular.js",
+    "/js/lib/angular-route.js",
+    "/js/lib/bootstrap.js"
+  ],
+
+  "/js/build/signin.min.js": [
+    "/js/lib/jquery.js",
+    "/js/lib/underscore.js",
+    "/js/lib/angular.js",
+    "/js/lib/angular-route.js"
+  ]
+
+}
