@@ -16,6 +16,8 @@ cookieParser = require 'cookie-parser'
 bodyParser = require 'body-parser'
 expressSession = require 'express-session'
 
+TestResource = require '../resources/TestResource'
+
 app = null
 
 tdRoot = path.resolve __dirname, '../..'
@@ -60,4 +62,12 @@ exports.makeServer = () ->
   server.listen config.host.port
 
   sockets.init server
+
+  TestResource.List (err, tests) ->
+
+    console.log tests
+    tests[0].test1 = 2
+    tests[0].Save (err) ->
+      TestResource.Fetch 1, (err, test1) ->
+        console.log err, test1
 

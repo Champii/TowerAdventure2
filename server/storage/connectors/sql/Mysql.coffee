@@ -1,9 +1,8 @@
 _ = require 'underscore'
 mysql = require 'mysql'
 
-env = require '../../../../settings/environement.js'
 Settings = require 'settings'
-config = new Settings(require '../../../../settings/config', {env: env.forceEnv})
+config = new Settings(require '../../../../config/config')
 
 connection = mysql.createConnection
   host     : config.mysql.host

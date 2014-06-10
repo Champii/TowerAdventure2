@@ -1,41 +1,14 @@
 _ = require 'underscore'
 
-env = require '../../../../settings/environement.js'
 Settings = require 'settings'
-config = new Settings(require '../../../../settings/config', {env: env.forceEnv})
+config = new Settings(require '../../../../config/config')
 
 tables =
-  users: [
+  tests: [
     {
       id: 1
-      login: 'a'
-      pass: 'a'
-      email: 'a'
-      groupe: 1
-    }
-  ]
-  vehicles: []
-  interventions: [
-    {
-      id: 1
-      user_id: 1
-      mecano_id: 1
-      vehicle_id: 1
-      date: 0
-      cost: 0
-      sent: true
-      accepted: true
-      payed: false
-      finished: false
-    }
-  ]
-  notifications: [
-    {
-      id: 1
-      user_id: 1
-      title: 'test'
-      body: 'test'
-      type: 'test'
+      test1: 1
+      test2: 2
     }
   ]
 

@@ -1,7 +1,6 @@
 Settings = require 'settings'
 
-env = require '../../../../settings/environement.js'
-config = new Settings(require '../../../../settings/config', {env: env.forceEnv})
+config = new Settings(require '../../../../config/config')
 
 driver = require './' + config.connectors.sql
 
